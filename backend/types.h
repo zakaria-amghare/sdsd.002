@@ -2,20 +2,29 @@
 #include<stdlib.h>
 typedef struct produit
 {
-char nom[20];
+char nom;
 int prix;
 
 }produit;
 
 typedef struct block
 {produit produit[10];
-int nb_p;
+int nombre_de_produit;
  
 }block;
 
 typedef struct tete
 {
-int nb_p_t;
-int nb_b;
+int nombre_de_produit_total;
+int nombre_de_block;
 }tete;
 
+
+void esp() 
+{
+    printf("*********---------------------------------------------------------------*********\n");
+    printf("*********---------------------------------------------------------------*********\n");
+    printf("*********---------------------------------------------------------------*********\n");
+    printf("*********---------------------------------------------------------------*********\n");
+    printf("*********---------------------------------------------------------------*********\n");
+}
