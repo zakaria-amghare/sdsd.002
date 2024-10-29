@@ -3,21 +3,22 @@
 int main ()
 
 { 
-    produit pro;
-    pro.nom='Z';
-    pro.prix=999;
+int a,b;
+produit pro;
 creation("zaki");
 
-for (int i = 0; i < 200; i++)
-{
-    pro.prix=i;
-    R_inserstion("zaki",pro);
+for (int i = 0; i < 20; i++)
+{   
+  pro.nom='a';
+  pro.id=i;
+  R_inserstion("zaki",pro);
 
 }
 display("zaki");
-esp();
-    pro.prix=33;
+    pro.id=15;
+ // recherche("zaki",pro,&a,&b);
+O_recherche("zaki",pro,&a,&b);
+printf("\n|block %d--produit% d\n", a, b);
 
-O_recherche("zaki",pro);
 remove("zaki");
 }

@@ -4,7 +4,7 @@ typedef struct produit
 {
 char nom;
 int prix;
-
+long id;
 }produit;
 
 typedef struct block
